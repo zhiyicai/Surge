@@ -9,9 +9,9 @@ nf_rating.js = type=http-response,requires-body=1,pattern=^https?:\/\/ios(-.*)?\
 # 单集评分
 nf_rating_season.js = type=http-response,pattern=^https?:\/\/ios(-.*)?\.prod\.ftl\.netflix\.com\/iosui\/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating_season.js
 # Lightroom
-Lightroom Premium = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zhiyicai/Surge/main/Scripts/Lightroom.js,script-update-interval=0
+# Lightroom Premium = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zhiyicai/Surge/main/Scripts/Lightroom.js,script-update-interval=0
 # Photoshop
-Photoshop = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zhiyicai/Surge/main/Scripts/Photoshop.js
+# Photoshop = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zhiyicai/Surge/main/Scripts/Photoshop.js
 # Fantastical
 Fantastical = type=http-response,pattern=^https:\/\/api\.flexibits\.com\/(v1\/auth\/device|v1\/account\/details),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zhiyicai/Surge/main/Scripts/Fantastical.js
 # Xmind
@@ -21,7 +21,7 @@ Castbox = type=http-response,pattern=^https?:\/\/everest\.castbox\.fm\/auth\/use
 # Shapr3D
 Shapr3D = type=http-response,pattern=^https?:\/\/prod\.api\.shapr3d\.com\/user-management\/profile-with-device,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zhiyicai/Surge/main/Scripts/Shapr3D.js,script-update-interval=0
 # Spotify
-Spotify = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/zhiyicai/Surge/main/Scripts/Spotify.js,script-update-interval=0
+# Spotify = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/zhiyicai/Surge/main/Scripts/Spotify.js,script-update-interval=0
 
 [MITM]
 hostname = %APPEND% ios-*.prod.ftl.netflix.com,ios.prod.ftl.netflix.com,photos.adobe.io,lcs-mobile-cops.adobe.io,api.flexibits.com,*.xmind.*,everest.castbox.fm,prod.api.shapr3d.com,api.pxmage.com,spclient.wg.spotify.com
